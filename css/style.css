@@ -1,0 +1,112 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 62.5%;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+     background: url('../img/bg.jpg') no-repeat 0 0;
+     background-size: cover;
+}
+
+main {
+     color: white;
+     font-family: 'Pixelify Sans', sans-serif;
+     height: 100vh;
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 10em;
+}
+
+main h1 {
+     font-size: 5rem;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+}
+
+main h2 {
+     display: inline;
+     font-size: 2.5rem;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+}
+
+section input {
+     display: inline;
+     font-size: 2.5rem;
+     margin: 0;
+     padding: 0;
+}
+
+section a {
+     color: purple;
+     background-color: #FBCEB1;
+     font-size: 2rem;
+     font-weight: bold;
+     margin: 1.5em;
+     padding: .5em 1em;
+     border-radius: 5px;
+     text-decoration: none;
+     align-self: center;
+     transition: all .5s ease-in-out;
+}
+
+section a:hover {
+     color: #FBCEB1;
+     background-color: purple;
+}
+
+#date {
+     font-size: 3rem;
+     color: purple;
+     text-decoration: underline;
+     text-decoration-thickness: 2px;
+}
+
+#img-details img, iframe{
+     display: block;
+     margin: 0 auto;
+     width: 200px;
+}
+
+#img-details h3 {
+     font-size: 3rem;
+     text-align: center;
+}
+
+#img-details h4 {
+     margin: 0 auto;
+     text-align: left;
+     font-size: 2rem;
+     max-width: 90%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
